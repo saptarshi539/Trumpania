@@ -40,8 +40,6 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
 ]
 
-
-
 ROOT_URLCONF = 'trumpania.urls'
 
 TEMPLATES = [
