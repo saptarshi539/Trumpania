@@ -53,7 +53,7 @@ def get_tweets(request):
 			#An additional feature is added to this page where the sentiment analysis is done using the APIs from this website http://docs.aylien.com/docs/sentiment 
             params = (('text' , str(match)), ('mode', 'tweet'))
             response = requests.get("https://api.aylien.com/api/v1/sentiment?", params = params, headers=JSON_HEADER).json()
-            trump_tweets.append(match + "      The sentiment is - "+str(response["polarity"]))
+            trump_tweets.append(match + "      The overall sentiment of the tweet is - "+str(response["polarity"]))
 			#Check if the number of tweets are greater than equal to 25 otherwise break
             if len(trump_tweets) >= 25:
 			    break
