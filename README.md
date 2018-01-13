@@ -5,7 +5,7 @@ analysis which has been done on the articles and tweets. The overall sentiment i
 
 # 1-Installation
 
-This project is a Django project. 
+This project is a python Django project. If you do not have python install please install python 2.7.13 from https://www.python.org/downloads/ 
 The project can be cloned and Django 1.11 can be installed by using the command pip install django==1.11
 
 # 2- How to use
