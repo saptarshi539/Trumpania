@@ -1,5 +1,6 @@
 # Trumpania
-Trumpania scrapes the latest tweets and latest tweets from Donald Trumps official twitter account and articles from cnn.com respectively
+Trumpania scrapes the latest tweets and latest tweets from Donald Trumps official twitter account and articles from cnn.com respectively. The highlight of this project is the sentiment
+analysis which has been done on the articles and tweets. The overall sentiment is listed in the end of each tweet and each article.
 
 
 # 1-Installation
@@ -15,6 +16,6 @@ If you choose articles, this will navigate you to another page. At the left you 
 If you choose to see the tweets, you will end up with a different page showing Trump's latest tweets. You can click the links on tweets.
 
 # 3- Notes
-Trumpania has one cool feature where I do sentiment analysis of the article or the tweet. The polarity is listed in the end of the article once you click on the article or in the end of 
+The cool feature of Trumpania is the sentiment analysis of the article or the tweet. The polarity is listed in the end of the article once you click on the article or in the end of 
 the tweet in either place it says - "The sentiment is - ngative" for the tweets and "The overall sentiment is negative" for the articles. The APIs are obtained from 
 http://docs.aylien.com/docs/sentiment with the API key "f63147288b7d1b12215280223f00c315" and API ID as "336fb365" which is also mentioned inside the code
