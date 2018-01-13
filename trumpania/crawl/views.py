@@ -129,6 +129,7 @@ def get_articles(request):
             matches = \
                 re.findall(r'<span class="metadata__byline__author">.*?<\/span>'
                            , line)
+            #One can click on the clickable links
             for match in matches:
                 auth_hrefs = re.findall(r'<a href=".*?" class', match)
                 for auth_href in auth_hrefs:
@@ -147,6 +148,7 @@ def get_articles(request):
                          content)
         content = re.sub('</div>', '<br>', content)
 
+        #One click on the headline and go to the content
         title = re.sub(r'<h1 class="pg-headline">', '', title)
         title = re.sub('<\/h1>', '', title)
 
@@ -172,8 +174,7 @@ def get_articles(request):
 		    break
 
 			
-    print len(uris)
-        
+    # The headlines are zipped and the remaining information is rendered to the website
     headlines_zipped = zip(head_indices, headlines)
     return render(request, 'crawl/cnn.html', {'headlines_zipped': headlines_zipped, 'descriptions': descriptions,
                                               'uris': uris, 'thumbnails': thumbnails, 'contents': contents, 'titles': titles, 'authors': authors, 'datetimes': datetimes, 'sentiments': sentiments})
