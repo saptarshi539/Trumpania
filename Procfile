@@ -1,1 +1,1 @@
-web: gunicorn trumpania/trumpania/wsgi.py --log-file -
+web: python trumpania/manage.py runserver 0.0.0.0:$PORT/crawl/main
