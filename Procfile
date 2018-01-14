@@ -1,1 +1,1 @@
-web: gunicorn -b 0.0.0.0:$PORT trumpania/trumpania.wsgi:application --log-file -
+web: gunicorn -b 0.0.0.0:$PORT trumpania/trumpania.wsgi:app --log-file -
