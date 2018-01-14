@@ -1,1 +1,1 @@
-web: python trumpania/manage.py runserver 0.0.0.0:$PORT
+web: python trumpania/manage.py runserver 132.236.194.8:8000
