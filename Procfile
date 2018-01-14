@@ -1,1 +1,1 @@
-web: gunicorn -b 0.0.0.0:$PORT trumpania/trumpania.wsgi --log-file -
+web: python trumpania/manage.py runserver 0.0.0.0:5000
