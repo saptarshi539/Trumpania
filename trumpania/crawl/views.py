@@ -6,6 +6,15 @@ import re
 import json
 import requests
 
+class bcolors:
+    HEADER = '\033[95m'
+    OKBLUE = '\033[94m'
+    OKGREEN = '\033[92m'
+    WARNING = '\033[93m'
+    FAIL = '\033[91m'
+    ENDC = '\033[0m'
+    BOLD = '\033[1m'
+    UNDERLINE = '\033[4m'
 
 def get_home(request):
     '''
@@ -53,7 +62,7 @@ def get_tweets(request):
 			#An additional feature is added to this page where the sentiment analysis is done using the APIs from this website http://docs.aylien.com/docs/sentiment 
             params = (('text' , str(match)), ('mode', 'tweet'))
             response = requests.get("https://api.aylien.com/api/v1/sentiment?", params = params, headers=JSON_HEADER).json()
-            trump_tweets.append(match + "      The overall sentiment of the tweet is - "+str(response["polarity"]))
+            trump_tweets.append(match + "<b>      The overall sentiment of the tweet is - <b>" + str(response["polarity"]))
 			#Check if the number of tweets are greater than equal to 25 otherwise break
             if len(trump_tweets) >= 25:
 			    break
@@ -165,7 +174,7 @@ def get_articles(request):
             requests.get('https://api.aylien.com/api/v1/sentiment?',
                          params=params, headers=JSON_HEADER).json()
         contents.append(content
-                        + 'The overall sentiment of the article is '
+                        + '<b>The overall sentiment of the article is <b>'
                         + str(response['polarity']))
         titles.append(title)
         authors.append(author)
