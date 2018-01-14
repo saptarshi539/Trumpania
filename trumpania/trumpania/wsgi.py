@@ -1,5 +1,5 @@
 """
-WSGI config for trumpcrawler project.
+WSGI config for trumpania project.
 
 It exposes the WSGI callable as a module-level variable named ``application``.
 
