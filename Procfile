@@ -1,1 +1,1 @@
-web: python trumpania/manage.py runserver 0.0.0.0:$PORT/crawl/main
+web: python trumpania/manage.py runserver 0.0.0.0:$PORT
