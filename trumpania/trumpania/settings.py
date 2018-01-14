@@ -42,6 +42,8 @@ INSTALLED_APPS = [
 
 ROOT_URLCONF = 'trumpania.urls'
 
+WSGI_APPLICATION = 'trumpania.wsgi.application'
+
 TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
