@@ -1,1 +1,1 @@
-web: gunicorn trumpania/trumpania.wsgi --log-file -
+web: gunicorn trumpania/trumpania/wsgi.py --log-file -
