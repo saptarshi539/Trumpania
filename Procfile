@@ -1,1 +1,1 @@
-web: python trumpania/manage.py runserver 139.59.156.64
+web: python trumpania/manage.py runserver 139.59.156.64:443
