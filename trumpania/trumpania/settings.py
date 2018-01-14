@@ -42,7 +42,7 @@ INSTALLED_APPS = [
 
 ROOT_URLCONF = 'trumpania.urls'
 
-WSGI_APPLICATION = 'trumpania.wsgi:application'
+WSGI_APPLICATION = 'trumpania.wsgi.crawl'
 
 TEMPLATES = [
     {
